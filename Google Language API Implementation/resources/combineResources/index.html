@@ -1,0 +1,41 @@
+<html>
+<head>
+	<title>Coresol Translattion</title>
+	<link rel="stylesheet" href="css/style.css"/>
+	<script type="text/javascript" src="js/jquery.js"></script>
+
+</head>
+<body>
+	<section id="wrapper">
+		<div class="large-offset-3 large-9 columns search_bar ">
+			<h3>The Multilingual Online Dictionary</h3>
+			<form class="myForm" action="firstdb.php" method="post" name="translation">
+				 <div class="row">
+					<div class="SearchBox">
+						<input type="text" placeholder="Enter Word to Translate" name="fname" id="search" pattern="[a-zA-Z]+" />
+						<input type="button" class="searchButton" id="submit" value="Translate" />
+					</div>
+				</div>
+				<div class="selectBox">
+					<select name="English" id="from" method="post" >     					
+						<option value="" >Detect Language</option>
+						<option value="de" >German</option>
+						<option value="ur" >urdu</option>
+						<option value="en" >English</option>
+					</select>					
+					<select name="Urdu" id="to" method="post" >
+						<option value="">To</option>
+						<option value="ur" selected = "selected">urdu</option>
+						<option value="en" >English</option>
+						<option value="de" >German</option>
+					</select>
+				</div>
+				<textarea id="translation" cols="30" rows="5"></textarea>
+
+			</form><!-- form ends -->
+		</div>
+		<div class="content">
+			
+		</div>
+	</section><!-- section ends -->
+</body>

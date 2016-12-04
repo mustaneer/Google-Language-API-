@@ -1,0 +1,74 @@
+#speak{
+  width: 50px;
+  margin-top: -8px;
+}
+.loader{
+	position: absolute; 
+	width: 50%; 
+	top: 24px;
+	left: 190px; 
+	display:none;
+}   
+textarea  {
+	font-size:20px;
+}
+.menu {
+	margin-bottom:15px;
+}
+.menu ul{
+	list-style:none;
+}
+.menu ul li{
+	display: block;
+	float: left;
+	padding-right: 40px;
+}
+.menu ul li > a{
+	font-size: 16px;
+	color: #000;
+}
+.menu ul li > a:hover{
+	font-size: 16px;
+	color: #000;
+	text-decoration:none;
+}
+.mobile_menu{
+	display:none;
+}
+
+/*************** mobile view ************/
+
+@media screen and (max-width:480px){
+.menu{
+	display:none;
+}
+.menu span{
+	float:left;
+	display:inline;
+}
+#menu{
+	float:right;
+	cursor:pointer;
+}
+.mobile_menu{
+	display:block;
+}
+.mobile_menu .list{
+	display:none;
+}
+.mobile_menu .list li{
+	list-style:none;
+	text-align:center;
+	padding:4px;
+}
+.mobile_menu .list li a{
+	font-size: 12px;
+	color: #000;
+	font-weight:bold;
+}
+.mobile_menu .list li a:hover{
+	font-size: 12px;
+	color: #000;
+	text-decoration:none;
+}
+}
